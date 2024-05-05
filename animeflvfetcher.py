@@ -10,7 +10,7 @@ def give_serie_links(chapters, serie_name, server):
             try:
                 for i in range(1, chapters + 1):
                     link_list = api.get_links(serie_name, i)
-                    print(link_list[server-1])
+                    print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
             except animeflv.exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Connection Error or the chapter/serie doesn't exist...")
@@ -25,7 +25,7 @@ def give_sequence_links_to_end(chapters, start_point, serie_name, server):
             try:
                 for i in range(start_point, chapters + 1):
                     link_list = api.get_links(serie_name, i)
-                    print(link_list[server-1])
+                    print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
             except animeflv.exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Connection Error or the chapter/serie doesn't exist...")
@@ -39,7 +39,7 @@ def give_sequence_links(start_point, end_point, serie_name, server):
             try:
                 for i in range(start_point, end_point + 1):
                     link_list = api.get_links(serie_name, i)
-                    print(link_list[server-1])
+                    print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
             except animeflv.exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Connection Error or the chapter/serie doesn't exist...")
@@ -53,7 +53,7 @@ def give_a_link(chapter_number, serie_name, server):
             try:
                 for i in range(chapter_number, chapter_number + 1):
                     link_list = api.get_links(serie_name, i)
-                    print(link_list[server-1])
+                    print(f"Chapter #{i}: " + str(link_list[server-1]))
                     finished = 1
             except animeflv.exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Connection Error or the chapter/serie/movie doesn't exist...")
