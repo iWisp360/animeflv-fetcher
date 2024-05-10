@@ -1,6 +1,6 @@
-from main_api import animeflv
+from animeflv_api import animeflv
 import requests.exceptions
-from main_api.animeflv import AnimeFLV
+from animeflv_api.animeflv import AnimeFLV
 
 
 # This gives the links for every chapter from a serie
