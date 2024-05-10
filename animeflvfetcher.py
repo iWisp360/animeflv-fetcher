@@ -1,4 +1,5 @@
 from animeflv_api import animeflv
+from animeflv_api import exception
 import requests.exceptions
 from animeflv_api.animeflv import AnimeFLV
 
@@ -17,7 +18,7 @@ def give_serie_links(chapters, serie_name, server):
                     link_list = api.get_links(serie_name, i)
                     print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
-            except api.animeflv.exception.AnimeFLVParseError:
+            except exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Parse Error or the chapter/serie doesn't exist, retrying...(Attempt {errors+1})")
                 errors += 1
             except requests.exceptions.ConnectionError:
@@ -39,7 +40,7 @@ def give_sequence_links(start_point, end_point, serie_name, server):
                     link_list = api.get_links(serie_name, i)
                     print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
-            except animeflv.exception.AnimeFLVParseError:
+            except exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Parse Error or the chapter/serie doesn't exist, retrying...(Attempt {errors+1})")
                 errors += 1
             except requests.exceptions.ConnectionError:
@@ -61,7 +62,7 @@ def give_a_link(chapter_number, serie_name, server):
                     link_list = api.get_links(serie_name, i)
                     print(f"Chapter #{i}: " + str(link_list[server-1]))
                     finished = 1
-            except animeflv.exception.AnimeFLVParseError:
+            except exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Parse Error or the chapter/serie doesn't exist, retrying...(Attempt {errors+1})")
                 errors += 1
             except requests.exceptions.ConnectionError:

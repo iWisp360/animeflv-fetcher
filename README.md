@@ -10,8 +10,6 @@ Don't worry! I'm here to save your life with `anime-fetch`, a CLI tool written i
 
 Install the .deb package in Releases with the tools offered within your distro, if they aren't included you can install gdebi
 
-For other distros you can download the bin included in Releases, install bs4 and cloudscraper for python and move the bin to your $PATH
-
 ```sh
 sudo apt install gdebi
 ```
