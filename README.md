@@ -20,16 +20,6 @@ Then you can install the package with the tools offered within your distro, if t
 sudo apt install gdebi
 ```
 
-### Fedora
-
-```sh
-sudo dnf install python-pip && pip install --break-system-packages animeflv
-```
-
-Then you can install the package with the Gnome Software Store.
-
-For another distro you will need to install the bs4, cloudscraper and animeflv lib from PyPI if they aren't in your distribution's repository and move the `anime-fetch` file in Releases to your $PATH
-
 ## How to Run
 
 Just execute
