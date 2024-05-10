@@ -6,15 +6,11 @@ Don't worry! I'm here to save your life with `anime-fetch`, a CLI tool written i
 
 ## How to Install
 
-1- You have to install the dependencies for `anime-fetch`
-
 ### Ubuntu/Debian based
 
-```sh
-sudo apt install python3-pip && pip install --break-system-packages animeflv
-```
+Install the .deb package in Releases with the tools offered within your distro, if they aren't included you can install gdebi
 
-Then you can install the package with the tools offered within your distro, if they aren't included you can install gdebi
+For other distros you can download the bin included in Releases, install bs4 and cloudscraper for python and move the bin to your $PATH
 
 ```sh
 sudo apt install gdebi
