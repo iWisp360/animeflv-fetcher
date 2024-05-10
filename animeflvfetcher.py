@@ -1,6 +1,6 @@
-import animeflv.exception
+from main_api import animeflv
 import requests.exceptions
-from animeflv import AnimeFLV
+from main_api.animeflv import AnimeFLV
 
 
 # This gives the links for every chapter from a serie
@@ -17,7 +17,7 @@ def give_serie_links(chapters, serie_name, server):
                     link_list = api.get_links(serie_name, i)
                     print(f"Chapter #{i}: " + str(link_list[server-1]) + "\n")
                     finished = 1
-            except animeflv.exception.AnimeFLVParseError:
+            except api.animeflv.exception.AnimeFLVParseError:
                 print(f"Chapter #{i}: Parse Error or the chapter/serie doesn't exist, retrying...(Attempt {errors+1})")
                 errors += 1
             except requests.exceptions.ConnectionError:
