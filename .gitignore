@@ -3,3 +3,4 @@
 .idea/
 anime-fetch-*.deb
 animeflv_api/__pycache__/
+animeflv-fetcher-deb-make.sh
