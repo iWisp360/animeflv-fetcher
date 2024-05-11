@@ -6,7 +6,7 @@ Don't worry! I'm here to save your life with `anime-fetch`, a CLI tool written i
 
 ## Requirements
 
-- Python 3.12
+- Python 3.9
 
 ## How to Install
 
