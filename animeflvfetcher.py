@@ -1,4 +1,3 @@
-from animeflv_api import animeflv
 from animeflv_api import exception
 import requests.exceptions
 from animeflv_api.animeflv import AnimeFLV
