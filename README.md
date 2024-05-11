@@ -4,6 +4,10 @@ Do you want free anime from AnimeFLV but the page is too slow and you just want 
 
 Don't worry! I'm here to save your life with `anime-fetch`, a CLI tool written in Python that will help you during this process.
 
+## Requirements
+
+- Python 3.12
+
 ## How to Install
 
 ### Ubuntu/Debian based
